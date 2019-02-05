@@ -1,0 +1,15 @@
+<form action="/signup" method="POST">
+
+  <label for="">Email:</label>
+  <input type="email" name="email" id="">
+
+  <label for="">Password:</label>
+  <input type="password" name="password">
+
+  <button type="submit">Sign Up</button>
+
+</form>
+
+{{#if errorMessage}}
+  <h3 style="color:red">{{errorMessage}}</h3>
+{{/if}}
